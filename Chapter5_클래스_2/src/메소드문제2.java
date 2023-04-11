@@ -42,8 +42,7 @@ public class 메소드문제2 {
 			System.out.print(i+" ");
 		System.out.println();
 	}
-	
-	public static void main(String[] args) {
+	static void process() {
 		System.out.println("정렬전:");
 		int[] arr = rand();
 		printArray(arr);
@@ -51,9 +50,13 @@ public class 메소드문제2 {
 		System.out.println("오름차순 정렬:");
 		sortASC(arr);
 		printArray(arr);
-
+		
 		System.out.println("내림차순 정렬:");
 		sortDESC(arr);
 		printArray(arr);
+	}
+	
+	public static void main(String[] args) {
+		process();
 	}
 }

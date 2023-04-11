@@ -35,10 +35,12 @@ public class 메소드문제1 {
 	static void print(String s) {
 		System.out.println(s);
 	}
-	
-	public static void main(String[] args) {
+	static void process() {
 		int num = inputInteger();
 		String result = DecimalToBinary(num);
 		print(result);
+	}
+	public static void main(String[] args) {
+		process();
 	}
 }
